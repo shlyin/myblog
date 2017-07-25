@@ -1,0 +1,354 @@
+* {
+    text-decoration:none;
+}
+input[type='date'],
+input[type='text'],
+textarea,
+button {
+    background-color: transparent;
+    border: none;
+    color: white;
+    outline: none;
+}
+body {
+    background-image: url('../img/0.jpg');
+    background-attachment: fixed;
+    background-repeat:no-repeat;
+    margin: 0 auto;
+    text-align: center;
+    padding-bottom: 500px;
+}
+.nav-cgci {
+    position: fixed;
+    top: 0;
+    height: 50px;
+    width: 100%;
+    border: 1px solid;
+    background: black;
+    opacity: 0.3;
+}
+.nav {
+    position: fixed;
+    top: 0;
+    height: 50px;
+    width: 100%;
+    margin: 0 auto;
+    z-index: 999;
+}
+.nav-title {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.title-tag {
+    margin: 30px;
+    color: white;
+    font-size: 20px;
+}
+.title-tag:hover {
+    cursor: pointer;
+    color: black;
+}
+.fa-book,
+.fa-home {
+    color: black;
+}
+
+/* greeting */
+.homepage-content {
+    position: fixed;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+.greeting,
+.greeting-date {
+    color: white;
+    font-size: 20px;
+}
+.greeting-date {
+    font-size: 70px;
+    margin: 20px;
+}
+
+/* todo */
+.todo-question {
+    color: white;
+}
+.todo-form {
+    position: relative;
+    width: 800px;
+    border-bottom: 1px dashed white;
+    text-align: center;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 35px;
+}
+#id-div-container {
+    position: relative;
+    margin: 0 auto;
+    width: 200px;
+}
+
+#id-span-add,
+#id-span-todo {
+    display: inline-block;
+    margin: 0 auto;
+    color: white;
+}
+#id-span-add {
+    font-weight: bold;
+    font-size: 30px;
+}
+#id-span-add:hover {
+    cursor: pointer;
+    color: grey;
+    border-color: grey;
+}
+#id-span-todo {
+    width: 250px;
+    outline:none;
+}
+.todo-cell {
+    position: relative;
+    font-size: 20px;
+    margin: 5px;
+    height: 25px;
+    text-align: left;
+}
+.todo-done,
+.todo-task,
+.todo-delete {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.todo-done:hover {
+    cursor: pointer;
+    color: grey;
+}
+.done {
+    left: 0;
+    text-decoration: line-through grey;
+}
+.todo-task {
+    left: 30px;
+}
+.todo-delete {
+    right: 0;
+}
+.todo-delete:hover {
+    cursor: pointer;
+    color: grey;
+}
+
+/* 日志边栏*/
+.blogpage {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 150px;
+    width: 1300px;
+    min-height: 700px;
+}
+.blog-side:hover {
+    cursor: pointer;
+    color: grey;
+}
+.blogpage-side-cgci {
+    position: absolute;
+    left: 0px;
+    width: 200px;
+    min-height: 300px;
+    border: 1px solid black;
+    border-radius: 15px;
+    background: black;
+    opacity: 0.3;
+}
+.blogpage-side {
+    position: absolute;
+    left: 0px;
+    width: 200px;
+    min-height: 300px;
+    border: 1px solid black;
+    border-radius: 15px;
+    color: white;
+}
+.blog-write,
+.blog-list,
+.blog-search {
+    border-bottom: 1px dashed white;
+}
+.blogpage-main-cgci {
+    position: absolute;
+    padding-top: 30px;
+    right: 0px;
+    width: 1000px;
+    min-height: 1160px;
+    border: 1px solid;
+    overflow: auto;
+    border-radius: 25px;
+    padding-bottom: 50px;
+    margin-bottom: 150px;
+    background: black;
+    opacity: 0.3;
+}
+.blogpage-main {
+    padding-top: 30px;
+    position: absolute;
+    right: 0px;
+    width: 1000px;
+    min-height: 1160px;
+    border: 1px solid black;
+    overflow: auto;
+    border-radius: 25px;
+    padding-bottom: 50px;
+    margin-bottom: 150px;
+    color: white;
+}
+.blog-cell {
+    width: 700px;
+    margin: 0 auto;
+    text-align: left;
+
+}
+.blog-cell + .blog-cell {
+    border-top: 1px dashed;
+}
+.blog-delete {
+    float: right;
+}
+
+/* 日志编辑 */
+.blogcontent-write {
+    margin: 45px;
+    margin-top: 30px;
+}
+#id-input-title,
+#id-input-author,
+#id-input-src {
+    display: block;
+    width: 900px;
+    height: 30px;
+    font-size: 20px;
+    border-bottom: 1px solid white;
+}
+#id-input-src {
+    min-height: 900px;
+    border: 1px solid white;
+}
+#id-button-submit {
+    display: block;
+    position: absolute;
+    margin: 20px;
+    left: 400px;
+    height: 40px;
+    width: 200px;
+    font-size: 20px;
+}
+.blog-new:hover {
+    border-radius: 15px;
+    border: 1px solid white;
+    cursor: pointer;
+    color: grey;
+}
+/* 博文列表 */
+.blog-detail:hover {
+    cursor: pointer;
+    color: lightgrey;
+}
+.blog-delete:hover {
+    cursor: pointer;
+    color: red;
+}
+/* 博文详细页面 */
+.blog-content {
+    margin: 0 auto;
+    text-align: left;
+    width: 70%;
+}
+.blog-content-hr {
+    width: 80%;
+}
+.comment-author {
+    width: 400px;
+    margin: 10px;
+    margin-top: 30px;
+    height: 25px;
+    line-height: 30px;
+    border: 1px solid white !important;
+}
+.comment-content {
+    width: 400px;
+    margin: 10px;
+    height: 100px;
+    line-height: 30px;
+    border: 1px solid white;
+}
+.comment-cell {
+    width: 70%;
+    text-align: left;
+    margin: 0 auto;
+}
+.commenter {
+    font-weight: bold;
+}
+.comment-cell + .comment-cell {
+    border-top: 1px dashed;
+}
+.comment-add:hover {
+    border-radius: 15px;
+    border: 1px solid white;
+    cursor: pointer;
+    color: grey;
+}
+/* 天气图表 */
+.heweather {
+    position: fixed;
+    right: 0px;
+    top: 60px;
+    width: 700px;
+    height: 700px;
+}
+@keyframes play{
+    0%{transform: rotate(0deg);}
+    100%{transform: rotate(360deg);}
+}
+.heweather-tag {
+    position: absolute;
+    right: 25px;
+    top: -25px;
+    color: lightyellow;
+    animation: play 20s linear infinite;
+}
+.heweather-tag:hover {
+    cursor: pointer;
+    animation-play-state: paused;
+}
+.fa-sun-o {
+    font-size: 55px !important;
+}
+.chart-cgci {
+    position: fixed;
+    display: none;
+    background: black;
+    opacity: 0.3;
+    right: 113px;
+    top: 83px;
+    width: 600px;
+    height: 400px;
+    border-radius: 15px;
+}
+.heweather-chart {
+    position: fixed;
+    display: none;
+    z-index: 9998;
+    right: 60px;
+    top: 43px;
+    width: 600px;
+    height: 400px;
+}
+.heweather-show {
+    display: inline-block;
+}
