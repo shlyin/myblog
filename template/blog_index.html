@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>博客首页</title>
+        <link rel="stylesheet" href="css/blog.css">
+        <script src="https://cdn.bootcss.com/remarkable/1.7.1/remarkable.js"></script>
+        <script src="https://cdn.bootcss.com/echarts/3.6.2/echarts.js"></script>
+        <link href="https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    </head>
+    <body>
+        <!-- particles.js container -->
+        <div id="particles-js"></div>
+
+        <div class="nav">
+            <div class="nav-cgci">
+            </div>
+            <div class="nav-title">
+                <a class="title-tag" href="/">
+                    <i class="fa fa-home"></i>
+                    首页
+                </a>
+                <span class="title-tag" data-action="blog_page">
+                    <i class="fa fa-book" aria-hidden="true"></i>
+                    日志
+                </span>
+            </div>
+        </div>
+        <div class="heweather">
+            <i class="fa fa-sun-o heweather-tag" aria-hidden="true" data-action="heweather_tag" title="天气图表"></i>
+            <div class="chart-cgci"></div>
+            <div class="heweather-chart"></div>
+        </div>
+        <div id="id-div-mainpage">
+            <div class="homepage-content">
+                <div class="greeting"></div>
+                <div class="todo"></div>
+            </div>
+        </div>
+
+        <!-- particles.js -->
+        <script src="js/particles.js"></script>
+        <script src="js/app.js"></script>
+
+        <!-- main.js -->
+        <script src="js/blog_helper.js"></script>
+        <script src="js/blog_template.js"></script>
+        <script src="js/blog_ajaxApi.js"></script>
+        <script src="js/todo_main.js"></script>
+        <script src="js/blog_main.js"></script>
+    </body>
+</html>
